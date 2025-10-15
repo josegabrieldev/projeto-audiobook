@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-image: linear-gradient(
+        to top,
+        rgb(10, 67, 30),
+        rgb(3, 22, 10)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-aplicativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#capitulo {
+    font-size: 1.9em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#nome-autor {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#container-botoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#anterior, #proximo {
+    width: 40px;
+}
+
+#play-pause {
+    width: 60px;
+}
+
+#pause {
+    display: none;
+}
+
+.tocando .play {
+    display: none;
+}
+
+.tocando .pause {
+    display: block;
+}
